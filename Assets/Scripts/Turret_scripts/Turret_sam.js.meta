@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: adf8b69723469d9499fd9bf267c3c100
+timeCreated: 1432134038
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - myProjectile: {fileID: 136108, guid: 9ad4d572620c5a2458d64294d89b5ef7, type: 2}
+  - myTarget: {instanceID: 0}
+  - pivot_Tilt: {instanceID: 0}
+  - pivot_Pan: {instanceID: 0}
+  - aim_Pan: {instanceID: 0}
+  - aim_Tilt: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
