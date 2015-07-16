@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{50282734-23B2-3B46-0E58-73B65DDC1802}</ProjectGuid>
+	<ProjectGuid>{A0C997FD-F448-668B-BF81-F834167FE5FD}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -50,13 +50,17 @@
      <Compile Include="Assets\Imports\DecalSystem\DecalSystem\Editor\DecalEditor.cs" />
      <Compile Include="Assets\Imports\DecalSystem\DecalSystem\Editor\DecalPolygon.cs" />
      <None Include="Assets\Materials\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\Materials\ToonShading\Shaders\ToonLitOutline+Wallhack.shader" />
+     <None Include="Assets\Imports\Effects\Projectors\Guidelines.txt" />
      <None Include="Assets\Imports\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Materials\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\Imports\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Materials\ToonShading\Shaders\ToonLitOutline.shader" />
      <None Include="Assets\Materials\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\Imports\Fantasy Skybox FREE\Readme\Readme.txt" />
+     <None Include="Assets\Imports\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Imports\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
-     <None Include="Assets\Imports\SuperCharacterController\README.txt" />
+     <None Include="Assets\Imports\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
      <None Include="Assets\Imports\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Imports\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
  <Reference Include="UnityEngine.UI">
@@ -101,11 +105,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{EFA9D322-5245-6842-846E-D8B402155824}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{5DBAE2C0-5457-C814-80ED-6050215E676F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{96F76A49-733F-ECF7-C6E8-3540D14F2CD5}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{335A2B63-E99C-9D5B-2634-7DC3870DC946}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript.unityproj">
-      <Project>{6394981F-7E19-EA3F-C859-8115ADE667D1}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+      <Project>{6F3EF221-7838-2FBB-9312-3A96068291E4}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

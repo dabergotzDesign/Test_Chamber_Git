@@ -8,7 +8,6 @@ public class PlayerScript : MonoBehaviour
 	public float jumpPower = 1;
 	public float speed;
 
-
 	private bool jump;
 	public bool useTorque = true;
 	public const float groundRayLength = 1f;
@@ -20,6 +19,7 @@ public class PlayerScript : MonoBehaviour
 	{
 		rigidbody = GetComponent<Rigidbody> ();
 		GameVariables.checkpoint = new Vector3 ();
+
 	}
 	
 	// Update is called once per frame
@@ -34,8 +34,9 @@ public class PlayerScript : MonoBehaviour
 		rigidbody.AddForce (movement * speed * Time.deltaTime);
 
 		// Fall detection
-		if (transform.position.y < -50)
+		if (transform.position.y < -10)
 		{
+
 			transform.position = GameVariables.checkpoint;
 		}
 		if (Input.GetKey (KeyCode.R) || Input.GetKey (KeyCode.Joystick1Button3))
@@ -43,14 +44,14 @@ public class PlayerScript : MonoBehaviour
 			transform.position = GameVariables.checkpoint;
 		}
 	
-
+		
 	}
 
 	private void FixedUpdate()
 	{
 		if (useTorque)
 		{
-			rigidbody.AddTorque(new Vector3(0, 0, 0) * jumpPower);
+			rigidbody.AddTorque(new Vector3(0, 0, 0) * jumpPower, ForceMode.VelocityChange);
 		}
 		else
 		{
@@ -65,11 +66,13 @@ public class PlayerScript : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.tag == "Trap") {
-			gameObject.GetComponent<Renderer> ().material.color = Color.grey;
-		} else 
+		if (other.tag == "Trap") 
 		{
-			gameObject.GetComponent<Renderer>().material.color = new Color(0.45f, 0.25f, 0, 0);
+			gameObject.GetComponent<Renderer> ().material.color = Color.red;
+		}
+		else 
+		{
+			gameObject.GetComponent<Renderer>().material.color = Color.white;
 		}
 
 	}

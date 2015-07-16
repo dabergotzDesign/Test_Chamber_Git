@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{96F76A49-733F-ECF7-C6E8-3540D14F2CD5}</ProjectGuid>
+	<ProjectGuid>{335A2B63-E99C-9D5B-2634-7DC3870DC946}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,9 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Imports\CyberSphereScripts\MovingPlatform.cs" />
-     <Compile Include="Assets\Imports\CyberSphereScripts\MovingPlatformsEditorStuff.cs" />
      <Compile Include="Assets\Imports\DecalSystem\DecalSystem\Decal.cs" />
+     <Compile Include="Assets\Imports\Fantasy Skybox FREE\Scripts\FSPlayer.cs" />
      <Compile Include="Assets\Imports\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
      <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
      <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
@@ -58,25 +57,18 @@
      <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
      <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
      <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
-     <Compile Include="Assets\Imports\SuperCharacterController\Core\SuperCharacterController.cs" />
-     <Compile Include="Assets\Imports\SuperCharacterController\Core\SuperCollider.cs" />
-     <Compile Include="Assets\Imports\SuperCharacterController\Core\SuperCollisionType.cs" />
-     <Compile Include="Assets\Imports\SuperCharacterController\Core\SuperMath.cs" />
-     <Compile Include="Assets\Imports\SuperCharacterController\Core\SuperStateMachine.cs" />
-     <Compile Include="Assets\Imports\SuperCharacterController\DebugDraw.cs" />
-     <Compile Include="Assets\Imports\SuperCharacterController\Math3d.cs" />
-     <Compile Include="Assets\Imports\SuperCharacterController\RPGController\RPGMesh.cs" />
-     <Compile Include="Assets\Imports\SuperCharacterController\RPGController\RPGTriangleTree.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
      <Compile Include="Assets\Scripts\Death.cs" />
      <Compile Include="Assets\Scripts\GameVariables.cs" />
-     <Compile Include="Assets\Scripts\LightOff.cs" />
+     <Compile Include="Assets\Scripts\LightOn.cs" />
      <Compile Include="Assets\Scripts\ParticleTrigger.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\ResetLevel.cs" />
+     <Compile Include="Assets\Scripts\ReverseRotate.cs" />
      <Compile Include="Assets\Scripts\Sources\LightningBolt.cs" />
      <Compile Include="Assets\Scripts\TestScripts\Ammonation.cs" />
+     <Compile Include="Assets\Scripts\TestScripts\Gravity.cs" />
      <Compile Include="Assets\Scripts\TestScripts\LevelFeedback.cs" />
      <Compile Include="Assets\Scripts\TestScripts\PlayerHolder.cs" />
      <Compile Include="Assets\Scripts\TestScripts\SlowMotion.cs" />
@@ -86,13 +78,17 @@
      <Compile Include="Assets\Scripts\levelLoad.cs" />
      <Compile Include="Assets\Scripts\rotate.cs" />
      <None Include="Assets\Materials\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\Materials\ToonShading\Shaders\ToonLitOutline+Wallhack.shader" />
+     <None Include="Assets\Imports\Effects\Projectors\Guidelines.txt" />
      <None Include="Assets\Imports\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Materials\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\Imports\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Materials\ToonShading\Shaders\ToonLitOutline.shader" />
      <None Include="Assets\Materials\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\Imports\Fantasy Skybox FREE\Readme\Readme.txt" />
+     <None Include="Assets\Imports\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Imports\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
-     <None Include="Assets\Imports\SuperCharacterController\README.txt" />
+     <None Include="Assets\Imports\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
      <None Include="Assets\Imports\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Imports\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
  <Reference Include="UnityEngine.UI">
@@ -104,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{EFA9D322-5245-6842-846E-D8B402155824}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{5DBAE2C0-5457-C814-80ED-6050215E676F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
