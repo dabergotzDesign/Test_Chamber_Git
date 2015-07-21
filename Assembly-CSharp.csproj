@@ -60,8 +60,10 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
      <Compile Include="Assets\Scripts\Death.cs" />
+     <Compile Include="Assets\Scripts\Fireball.cs" />
      <Compile Include="Assets\Scripts\GameVariables.cs" />
      <Compile Include="Assets\Scripts\LightOn.cs" />
+     <Compile Include="Assets\Scripts\ParticleEmit.cs" />
      <Compile Include="Assets\Scripts\ParticleTrigger.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\ResetLevel.cs" />

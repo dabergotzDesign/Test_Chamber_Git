@@ -4,6 +4,7 @@ using System.Collections;
 public class Death : MonoBehaviour
 {
 	private Animator animator;
+	bool collided;
 
 	void Awake()
 	{
@@ -21,12 +22,17 @@ public class Death : MonoBehaviour
 
 	}
 
-	void OnTriggerEnter (Collider other)
+	IEnumerator OnTriggerEnter (Collider other)
 	{
 		if (other.gameObject.tag == "Player") 
 		{
 			animator.SetBool("shock",true);
-			other.transform.position = GameVariables.checkpoint;
+			collided = true;
+			yield return new WaitForSeconds(0.5f);
+			if(collided)
+			{
+				other.transform.position = GameVariables.checkpoint;
+			}
 		}
 	}
 
@@ -34,6 +40,7 @@ public class Death : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player")
 		{
+			collided = false;
 			animator.SetBool ("shock",false);
 		}
 	}
