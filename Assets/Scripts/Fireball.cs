@@ -5,17 +5,13 @@ public class Fireball : MonoBehaviour
 {
 	bool collided;
 
-	void Start ()
-	{
-
-	}
 
 	IEnumerator OnTriggerEnter(Collider other)
 	{
 		if (other.tag == "Player")
 		{
 			collided = true;		
-			yield return new WaitForSeconds(0.5f);
+			yield return new WaitForSeconds(1);
 			if(collided)
 			{
 				other.transform.position = GameVariables.checkpoint;

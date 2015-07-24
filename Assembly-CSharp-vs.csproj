@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
      <Compile Include="Assets\Scripts\Death.cs" />
+     <Compile Include="Assets\Scripts\FallDeath.cs" />
      <Compile Include="Assets\Scripts\Fireball.cs" />
      <Compile Include="Assets\Scripts\GameVariables.cs" />
      <Compile Include="Assets\Scripts\LightOn.cs" />
@@ -75,6 +76,7 @@
      <Compile Include="Assets\Scripts\TestScripts\PlayerHolder.cs" />
      <Compile Include="Assets\Scripts\TestScripts\SlowMotion.cs" />
      <Compile Include="Assets\Scripts\TestScripts\Turret.cs" />
+     <Compile Include="Assets\Scripts\WaterEffect.cs" />
      <Compile Include="Assets\Scripts\animationTrigger.cs" />
      <Compile Include="Assets\Scripts\fallingPlatform.cs" />
      <Compile Include="Assets\Scripts\levelLoad.cs" />
