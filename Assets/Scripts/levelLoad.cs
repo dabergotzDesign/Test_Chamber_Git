@@ -7,9 +7,12 @@ public class levelLoad : MonoBehaviour
 	// Use this for initialization
 	void OnTriggerEnter (Collider other) 
 	{
-		int i = Application.loadedLevel;
-		Application.LoadLevelAsync(i + 1);
-		Debug.Log("loaded");
+		if (Application.GetStreamProgressForLevel ("GLD_LoadingScreenLevel02") == 1)
+		{
+			int i = Application.loadedLevel;
+			Application.LoadLevel(i + 1);
+		
+		}
 	}
 	
 }

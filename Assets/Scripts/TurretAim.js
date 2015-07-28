@@ -14,6 +14,8 @@ private var nextFireTime : float;
 private var nextMoveTime : float;
 private var desiredRotation : Quaternion;
 private var aimError : float;
+public var otherClip: AudioClip;
+
 
 function Start ()
 {
@@ -22,6 +24,7 @@ function Start ()
 
 function Update ()
 {
+	
 	if(myTarget)
 	{
 		if(Time.time >= nextMoveTime)
@@ -32,6 +35,8 @@ function Update ()
 		
 		if(Time.time >= nextFireTime)
 		{
+			var audio: AudioSource = GetComponent.<AudioSource>();
+			audio.Play();
 			FireProjectile();
 		}
 	}
