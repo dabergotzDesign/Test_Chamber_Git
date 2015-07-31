@@ -3,6 +3,7 @@
 public class LightOn : MonoBehaviour
 {
 	public GameObject point_light;
+	public AudioClip clip;
 
 	void Start()
 	{
@@ -13,6 +14,7 @@ public class LightOn : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player") 
 		{
+			AudioSource.PlayClipAtPoint(clip,new Vector3());	
 			point_light.active = true;
 		}
 	}

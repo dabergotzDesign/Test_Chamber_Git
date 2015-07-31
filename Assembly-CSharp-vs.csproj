@@ -78,11 +78,13 @@
      <Compile Include="Assets\Scripts\TestScripts\PlayerHolder.cs" />
      <Compile Include="Assets\Scripts\TestScripts\SlowMotion.cs" />
      <Compile Include="Assets\Scripts\TestScripts\Turret.cs" />
+     <Compile Include="Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\Scripts\WaterEffect.cs" />
      <Compile Include="Assets\Scripts\animationTrigger.cs" />
      <Compile Include="Assets\Scripts\fallingPlatform.cs" />
      <Compile Include="Assets\Scripts\levelLoad.cs" />
      <Compile Include="Assets\Scripts\rotate.cs" />
+     <Compile Include="Assets\Scripts\waitForAni.cs" />
      <None Include="Assets\Materials\ToonShading\Shaders\ToonBasic.shader" />
      <None Include="Assets\Materials\ToonShading\Shaders\ToonLitOutline+Wallhack.shader" />
      <None Include="Assets\Imports\Effects\Projectors\Guidelines.txt" />

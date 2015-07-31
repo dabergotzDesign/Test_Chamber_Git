@@ -11,6 +11,7 @@ public class PlayerScript : MonoBehaviour
 	private bool jump;
 	public bool useTorque = true;
 	public const float groundRayLength = 1f;
+	
 
 	Rigidbody rigidbody;
 
@@ -39,9 +40,17 @@ public class PlayerScript : MonoBehaviour
 
 			transform.position = GameVariables.checkpoint;
 		}
+
+		//Reload
 		if (Input.GetKey (KeyCode.R) || Input.GetKey (KeyCode.Joystick1Button3))
 		{
 			transform.position = GameVariables.checkpoint;
+		}
+
+		//Back to Menu with Escape / Options
+		if (Input.GetKey (KeyCode.Escape) || Input.GetKey(KeyCode.Joystick1Button9)) 
+		{
+			Application.LoadLevel("GLD_Menu");
 		}
 	
 		
@@ -76,6 +85,7 @@ public class PlayerScript : MonoBehaviour
 		}
 
 	}
+
 
 
 }

@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TurretAim.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\waitForAni.cs">
     <Files>
-      <File FileName="Assets\Scripts\TurretAim.js" Line="40" Column="21" />
+      <File FileName="Assets\Scripts\PlayerScript.cs" Line="89" Column="1" />
+      <File FileName="Assets\Scripts\waitForAni.cs" Line="13" Column="1" />
+      <File FileName="Assets\Scripts\ScreenLevel1.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
