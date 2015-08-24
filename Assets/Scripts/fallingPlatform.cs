@@ -3,22 +3,40 @@ using System.Collections;
 
 public class fallingPlatform : MonoBehaviour
 {
+
+	private Vector3 startPosition;
+	private Quaternion startRotation;
+
 		bool isFalling = false;
+		bool isKinematic = true;
  		float downSpeed = 0;
 	
-
-	// Use this for initialization
-	void OnTriggerEnter (Collider collider)
+	// checked the position
+	void Start()
 	{
-		if (collider.gameObject.name == "Player")
-		{
-			gameObject.GetComponent<Renderer>().material.color = new Color (0.7f, 0.1f, 0.1f,0);
-			isFalling = true;
-			Destroy (gameObject, 5);
-		}
+		startPosition = transform.position;
+		startRotation = transform.rotation;
 	}
+
+	// check if the player enters the object
+	void OnTriggerEnter (Collider collide)
+	{
+		if (collide.gameObject.name == "Player")
+		{
+			gameObject.GetComponent<Renderer> ().material.color = new Color (0.7f, 0.1f, 0.1f, 0);
+			isFalling = true;
+		}
+
+	}
+
+	// gives the material the normal color
+	void OnTriggerExit (Collider collide)
+	{
+		gameObject.GetComponent<Renderer> ().material.color = new Color (1, 1, 1, 0);
+	}
+
 	
-	// Update is called once per frame
+	// starts the fall
 	void Update () 
 	{
 		if (isFalling)
@@ -26,6 +44,23 @@ public class fallingPlatform : MonoBehaviour
 			downSpeed += Time.deltaTime/75;
 			transform.position = new Vector3(transform.position.x,
           	transform.position.y-downSpeed, transform.position.z);
+
+			// Fall detection
+			if (transform.position.y < -5)
+			{
+				//Destroy(gameObject);
+				DestroyAndReset();
+			}
+
 		}
+
+	}
+
+	// resets the object
+	public void DestroyAndReset()
+	{
+		transform.position = startPosition;
+		transform.rotation = startRotation;
+		isFalling = false;
 	}
 }
